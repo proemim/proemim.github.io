@@ -1,12 +1,12 @@
 {
   "name": "Rémi Mehtali",
   "short_name": "Rémi Mehtali",
-  "description": "RNA biology, data analysis, projects, and notes.",
+  "description": "RNA biology, structural biology, data analysis, projects, and notes.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f3f7fa",
-  "theme_color": "#2c608c",
+  "theme_color": "#4682B4",
   "icons": [
     {
       "src": "/assets/img/favicon.svg",

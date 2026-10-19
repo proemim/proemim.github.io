@@ -22,8 +22,8 @@ python3 -m http.server 8000
 .
 ├── index.html              # all content
 ├── assets/
-│   ├── css/style.css       # simple layout, light/dark colours
-│   ├── js/main.js          # theme toggle and footer year
+│   ├── css/style.css       # layout, light/dark colours, responsive rules
+│   ├── js/main.js          # theme, sketch tabs, active nav, copy email
 │   └── img/
 │       ├── avatar.png
 │       ├── favicon.svg
@@ -34,9 +34,17 @@ python3 -m http.server 8000
 └── .nojekyll
 ```
 
+## Layout
+
+- Sticky left overview with avatar, name, short description, social links, navigation, and the theme toggle.
+- Main column with a small hero card, the interactive sketch, About, placeholder Projects and Tools, and Contact.
+- The sketch has three tabs: **Reads**, **Mutations**, and **Ensembles**. They switch between small conceptual diagrams and are keyboard accessible.
+- Responsive: the left overview becomes a top profile block on narrow screens.
+
 ## Editing
 
-- Replace the project and tool placeholders in `index.html` when they are ready.
+- Replace the project placeholders in `index.html` with real project cards.
+- Replace the tool placeholders with real tools or methods.
 - Update the About and Contact text in `index.html`.
 - Replace `assets/img/avatar.png` with a square photo if wanted.
 - Colours are defined at the top of `assets/css/style.css`.
