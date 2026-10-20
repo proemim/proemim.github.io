@@ -37,15 +37,15 @@ python3 -m http.server 8000
 ## Layout
 
 - Sticky left overview with avatar, name, short description, social links, navigation, and the theme toggle.
-- Main column with a small hero card, the interactive sketch, About, Background, placeholder Projects, real Tools, and Contact.
+- Main column with a small hero card, the interactive sketch, About, Background, placeholder Projects, and Contact.
 - The sketch has three tabs: **Reads**, **Mutations**, and **Ensembles**. They switch between small conceptual diagrams and are keyboard accessible.
-- Background combines a research timeline with education and languages.
+- Background presents research projects as short descriptions, plus education and languages.
 - Responsive: the left overview becomes a top profile block on narrow screens.
 
 ## Editing
 
 - Replace the project placeholders in `index.html` with real project cards.
-- Update the research timeline, education, and tools when they change.
+- Update the research projects, education, and languages when they change.
 - Update the About and Contact text in `index.html`.
 - Replace `assets/img/avatar.png` with a square photo if wanted.
 - Colours are defined at the top of `assets/css/style.css`.
@@ -53,7 +53,7 @@ python3 -m http.server 8000
 
 ## Public content
 
-The site deliberately omits the phone number, home address, date of birth, and reference contact details from the CV. Only public-facing education, research experience, language levels, and general tools are listed.
+The site deliberately omits the phone number, home address, date of birth, and reference contact details from the CV. Only public-facing education, research experience, and language levels are listed.
 
 ## Deployment
 
