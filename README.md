@@ -37,14 +37,15 @@ python3 -m http.server 8000
 ## Layout
 
 - Sticky left overview with avatar, name, short description, social links, navigation, and the theme toggle.
-- Main column with a small hero card, the interactive sketch, About, Background, placeholder Projects, and Contact.
+- Main column with a small hero card, the interactive sketch, About, Background, Projects, and Contact.
 - The sketch has three tabs: **Reads**, **Mutations**, and **Ensembles**. They switch between small conceptual diagrams and are keyboard accessible.
 - Background presents research projects as short descriptions, plus education and languages.
+- Projects currently features the rG4 project with Angelita at IBMC Strasbourg, followed by two placeholders.
 - Responsive: the left overview becomes a top profile block on narrow screens.
 
 ## Editing
 
-- Replace the project placeholders in `index.html` with real project cards.
+- Update the rG4 project card and replace the remaining placeholders in `index.html` when project details change.
 - Update the research projects, education, and languages when they change.
 - Update the About and Contact text in `index.html`.
 - Replace `assets/img/avatar.png` with a square photo if wanted.

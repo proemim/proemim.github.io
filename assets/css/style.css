@@ -936,12 +936,59 @@ p {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
 .project-card {
   padding: 20px;
+}
+
+.project-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+  gap: 28px;
+  padding: 26px 28px;
+}
+
+.project-featured h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.project-featured .project-summary > p:not(.kicker) {
+  max-width: 64ch;
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.project-plan {
+  align-self: start;
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
+}
+
+.project-plan .kicker {
+  margin-bottom: 8px;
+}
+
+.project-plan ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 1.05em;
+}
+
+.project-plan li {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.project-plan li::marker {
+  color: var(--accent-strong);
 }
 
 .placeholder-card {
@@ -1211,6 +1258,17 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .project-featured {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-plan {
+    padding: 18px 0 0;
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+
   .contact-card {
     align-items: flex-start;
     flex-direction: column;
@@ -1256,6 +1314,7 @@ p {
   .quick-card,
   .experience-card,
   .education-card,
+  .project-featured,
   .contact-card {
     padding: 20px;
   }
